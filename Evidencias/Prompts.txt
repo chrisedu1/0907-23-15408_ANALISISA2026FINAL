@@ -1,0 +1,11 @@
+Estoy diseñando una API Rest en .NET 8 para un sistema de logística llamado 'Envíos Rápidos GT'. Necesito estructurar mis entidades en Entity Framework Core usando SQLite. Tengo la entidad Envio y requiero asociarle un historial de cambios de estado (HistorialEnvio) para cumplir con la trazabilidad.
+
+Creé un proyecto Web mínimo en .NET usando dotnet new web -o ApiRest, pero al agregar mis clases de controladores y el contexto de la base de datos, el compilador me está arrojando errores CS0246 indicando que no encuentra los tipos de datos ni los DTOs que definí.
+
+Al intentar compilar mi solución de Entity Framework en .NET 8.0, la restauración de paquetes me genera el error NU1202. Dice que el paquete Microsoft.EntityFrameworkCore.Sqlite en su versión 10.0.9 no es compatible con el framework de destino net8.0.
+
+Mi API ya compila y funciona localmente, pero un tercero el ingeniero necesita consumirla. Además, planeo desplegar el prototipo en Render.com. ¿Qué configuraciones debo añadir en mi Program.cs para habilitar y garantizar que la interfaz de Swagger sea accesible directamente desde la URL
+
+
+Reflexion:
+El uso de la IA facilita muchas cosas, pero al facilitar tanto el trabajo que debemos hacer, uno se olvida de aprender y entender realmente lo que se entá haciendo.
